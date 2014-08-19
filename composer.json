@@ -1,0 +1,23 @@
+{
+  "name": "donut/capture_buffer",
+  "description": "capture output buffer from PHP script",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "duchess",
+      "email": "code@donut.club"
+    }
+  ],
+  "autoload": {
+    "files": ["capture_buffer.php"]
+  },
+  "require": {
+    "php": ">=4.3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "4.2.2"
+  },
+  "scripts": {
+    "test": "phpunit --tap"
+  }
+}
