@@ -11,4 +11,9 @@ class CaptureBufferTest extends \PHPUnit_Framework_TestCase {
     $this->assertTrue($actual);
   }
 
+  public function test_captures_buffer_from_script() {
+    $actual = u\capture_buffer("test/fake.php");
+    $this->assertSame("hello world", $actual);
+  }
+
 }
